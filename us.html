@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <title> Brain & TaeLin</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="wedding site">
+    <meta name="author" content="ask">
+
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+</head>
+<style>
+    @keyframes slide {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        50% {
+            transform: translate3d(600px, 400px, 0px);
+            opacity: .2;
+        }
+        100% {
+            transform: translate3d(0px, 000px, 0px);
+        }
+    }
+    
+    #heart {
+        position: relative;
+        width: 100px;
+        height: 80px;
+        animation: slide 10s infinite;
+    }
+    
+    #heart:before,
+    #heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: red;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+    
+    #heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
+    
+    #map {
+        position: center;
+        width: 1000px;
+        height: 800px;
+    }
+    
+    h2 {
+        font-family: cursive, fantasy, Courier New, Courier, monospace;
+        font-size: 59px;
+        line-height: 60px;
+        color: black;
+        text-align: center;
+    }
+    
+    p {
+        font-family: cursive, fantasy, Courier New, Courier, monospace;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 15px;
+        position: center;
+        color: black;
+    }
+    
+    footer {
+        font-family: cursive, fantasy, Courier New, Courier, monospace;
+        font-size: 12px;
+        color: black;
+    }
+    
+    span {
+        padding: 10px 0;
+        color: black;
+        font-family: cursive, fantasy, Courier New, Courier, monospace;
+        font-size: 40px;
+    }
+    
+    .jumbotron {
+        background-color: white;
+    }
+</style>
+
+
+
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header navbar-right">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a style="padding-right: 30px;text-decoration: none;" class="logo" href="home.html" class="navbar-brand" navbar-left>Brian<span style="font-size:300%;color:red; text-decoration: none;">&hearts;</span>  
+           TaeLin</i></span id="logo"></a>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="#map">Map</a></li>
+
+                        <li><a href="ourshower.html">Gallery</a></li>
+                        <li><a href="weddingrsvp.html">RSVP</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="heart" class="heart"></div>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <img src="images/thumbs/chairs.jpg" height="600" width="700"></img>
+            <div id="heart" class="heart"></div>
+
+
+
+            <p> Ms. Seung Yeon Oh together with Ms. Patricia Colepaugh and the late Mr. Wayne Somers request the honor of your presence in the celebration of the marriage of their children TaeLin Kim & Brian Somers</p><br>
+            <p>Save the Date: April 30th, 2016 at 12:00 pm </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section>
+            <div class="page-header" id="map">
+
+
+                <div class="banner">
+
+                    <img src="images/directions.jpg" id="map"></img>
+                </div>
+
+
+
+        </section>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://www.kirupa.com/js/prefixfree.min.js"></script>
+
+    <script javascript>
+        (function() {
+            var body = $('body');
+            $('.menu-toggle').bind('click', function() {
+                body.toggleClass('menu-open');
+                return false;
+            });
+        })();
+    </script>
